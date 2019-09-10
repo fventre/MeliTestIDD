@@ -1,0 +1,1010 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		236BF9EC22E53527008C66AC /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BF9EB22E53527008C66AC /* ProductView.swift */; };
+		236C213522C06BB60041C7A2 /* ProductRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C213422C06BB60041C7A2 /* ProductRepresentation.swift */; };
+		236C214222C1D4D00041C7A2 /* AFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C214122C1D4D00041C7A2 /* AFService.swift */; };
+		236C214422C1DA950041C7A2 /* ProductRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C214322C1DA950041C7A2 /* ProductRepositoryProtocol.swift */; };
+		236C214622C1DB000041C7A2 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C214522C1DB000041C7A2 /* ProductRepository.swift */; };
+		236C214822C255BB0041C7A2 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C214722C255BB0041C7A2 /* SearchResponse.swift */; };
+		238EAB21230B5CAA005AEBA6 /* GetProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238EAB20230B5CAA005AEBA6 /* GetProductDetail.swift */; };
+		2391F4FE22DEC46C00BE14CA /* ProductAppInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391F4FD22DEC46C00BE14CA /* ProductAppInstance.swift */; };
+		2391F50222DECCC000BE14CA /* BaseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391F50122DECCC000BE14CA /* BaseCellProtocol.swift */; };
+		2391F50422DECD0E00BE14CA /* UIView-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391F50322DECD0E00BE14CA /* UIView-extension.swift */; };
+		2391F50622DECD7900BE14CA /* SearchScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391F50522DECD7900BE14CA /* SearchScreenCollectionViewCell.swift */; };
+		2391F50822DED2E400BE14CA /* SearchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391F50722DED2E400BE14CA /* SearchScreenView.swift */; };
+		23A236CB22CE8909008FBA69 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A236CA22CE8909008FBA69 /* DomainError.swift */; };
+		23A236CD22CE892F008FBA69 /* PerformAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A236CC22CE892F008FBA69 /* PerformAction.swift */; };
+		23A236CF22CE8989008FBA69 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A236CE22CE8989008FBA69 /* Query.swift */; };
+		23A236D222CE8B88008FBA69 /* CodableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A236D122CE8B88008FBA69 /* CodableUtils.swift */; };
+		23A236D422CE8B9E008FBA69 /* CodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A236D322CE8B9E008FBA69 /* CodableError.swift */; };
+		23A236D722CE8D94008FBA69 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A236D622CE8D94008FBA69 /* ProductServiceProtocol.swift */; };
+		23A236D922CE8E11008FBA69 /* SearchProductError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A236D822CE8E11008FBA69 /* SearchProductError.swift */; };
+		23C272B922B93C7500F3E43A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272B822B93C7500F3E43A /* AppDelegate.swift */; };
+		23C272BB22B93C7500F3E43A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272BA22B93C7500F3E43A /* ViewController.swift */; };
+		23C272BE22B93C7500F3E43A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C272BC22B93C7500F3E43A /* Main.storyboard */; };
+		23C272C122B93C7500F3E43A /* DesafiaMercadoLibre.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23C272BF22B93C7500F3E43A /* DesafiaMercadoLibre.xcdatamodeld */; };
+		23C272C322B93C7700F3E43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C272C222B93C7700F3E43A /* Assets.xcassets */; };
+		23C272C622B93C7700F3E43A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C272C422B93C7700F3E43A /* LaunchScreen.storyboard */; };
+		23C272D122B93C7700F3E43A /* DesafiaMercadoLibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272D022B93C7700F3E43A /* DesafiaMercadoLibreTests.swift */; };
+		23C272DC22B93C7700F3E43A /* DesafiaMercadoLibreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272DB22B93C7700F3E43A /* DesafiaMercadoLibreUITests.swift */; };
+		23C272F322B940BB00F3E43A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272F222B940BB00F3E43A /* Product.swift */; };
+		23C272F522B940FF00F3E43A /* SearchProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272F422B940FF00F3E43A /* SearchProduct.swift */; };
+		23C272FB22B9419D00F3E43A /* SearchProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272FA22B9419D00F3E43A /* SearchProductViewController.swift */; };
+		23C272FD22B941BE00F3E43A /* SearchProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272FC22B941BE00F3E43A /* SearchProductPresenter.swift */; };
+		23C272FF22B941DA00F3E43A /* SearchProductInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C272FE22B941DA00F3E43A /* SearchProductInstance.swift */; };
+		6B8B2688B508A0D5CBC04C07 /* Pods_DesafiaMercadoLibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2A597A1A98355367AE8569 /* Pods_DesafiaMercadoLibre.framework */; };
+		B114F527CECEF32EDA36B0C5 /* Pods_DesafiaMercadoLibreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31915B16FB8D758AD805BF0 /* Pods_DesafiaMercadoLibreUITests.framework */; };
+		B61758BCCA5DCCB55E457BCB /* Pods_DesafiaMercadoLibreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BE1F4E9050FED560341605 /* Pods_DesafiaMercadoLibreTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23C272CD22B93C7700F3E43A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23C272AD22B93C7500F3E43A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23C272B422B93C7500F3E43A;
+			remoteInfo = DesafiaMercadoLibre;
+		};
+		23C272D822B93C7700F3E43A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23C272AD22B93C7500F3E43A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23C272B422B93C7500F3E43A;
+			remoteInfo = DesafiaMercadoLibre;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F2A597A1A98355367AE8569 /* Pods_DesafiaMercadoLibre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafiaMercadoLibre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		236BF9EB22E53527008C66AC /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		236C213422C06BB60041C7A2 /* ProductRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepresentation.swift; sourceTree = "<group>"; };
+		236C214122C1D4D00041C7A2 /* AFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFService.swift; sourceTree = "<group>"; };
+		236C214322C1DA950041C7A2 /* ProductRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepositoryProtocol.swift; sourceTree = "<group>"; };
+		236C214522C1DB000041C7A2 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		236C214722C255BB0041C7A2 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		238EAB20230B5CAA005AEBA6 /* GetProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductDetail.swift; sourceTree = "<group>"; };
+		2391F4FD22DEC46C00BE14CA /* ProductAppInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAppInstance.swift; sourceTree = "<group>"; };
+		2391F50122DECCC000BE14CA /* BaseCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellProtocol.swift; sourceTree = "<group>"; };
+		2391F50322DECD0E00BE14CA /* UIView-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-extension.swift"; sourceTree = "<group>"; };
+		2391F50522DECD7900BE14CA /* SearchScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		2391F50722DED2E400BE14CA /* SearchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenView.swift; sourceTree = "<group>"; };
+		23A236CA22CE8909008FBA69 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		23A236CC22CE892F008FBA69 /* PerformAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformAction.swift; sourceTree = "<group>"; };
+		23A236CE22CE8989008FBA69 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		23A236D122CE8B88008FBA69 /* CodableUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableUtils.swift; sourceTree = "<group>"; };
+		23A236D322CE8B9E008FBA69 /* CodableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableError.swift; sourceTree = "<group>"; };
+		23A236D622CE8D94008FBA69 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceProtocol.swift; sourceTree = "<group>"; };
+		23A236D822CE8E11008FBA69 /* SearchProductError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductError.swift; sourceTree = "<group>"; };
+		23C272B522B93C7500F3E43A /* DesafiaMercadoLibre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafiaMercadoLibre.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C272B822B93C7500F3E43A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23C272BA22B93C7500F3E43A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23C272BD22B93C7500F3E43A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23C272C022B93C7500F3E43A /* DesafiaMercadoLibre.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesafiaMercadoLibre.xcdatamodel; sourceTree = "<group>"; };
+		23C272C222B93C7700F3E43A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23C272C522B93C7700F3E43A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23C272C722B93C7700F3E43A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C272CC22B93C7700F3E43A /* DesafiaMercadoLibreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafiaMercadoLibreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C272D022B93C7700F3E43A /* DesafiaMercadoLibreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafiaMercadoLibreTests.swift; sourceTree = "<group>"; };
+		23C272D222B93C7700F3E43A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C272D722B93C7700F3E43A /* DesafiaMercadoLibreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafiaMercadoLibreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C272DB22B93C7700F3E43A /* DesafiaMercadoLibreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafiaMercadoLibreUITests.swift; sourceTree = "<group>"; };
+		23C272DD22B93C7700F3E43A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C272F222B940BB00F3E43A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		23C272F422B940FF00F3E43A /* SearchProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProduct.swift; sourceTree = "<group>"; };
+		23C272FA22B9419D00F3E43A /* SearchProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductViewController.swift; sourceTree = "<group>"; };
+		23C272FC22B941BE00F3E43A /* SearchProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductPresenter.swift; sourceTree = "<group>"; };
+		23C272FE22B941DA00F3E43A /* SearchProductInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductInstance.swift; sourceTree = "<group>"; };
+		43F2E9061A8E69A6380CCF69 /* Pods-DesafiaMercadoLibre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafiaMercadoLibre.release.xcconfig"; path = "Target Support Files/Pods-DesafiaMercadoLibre/Pods-DesafiaMercadoLibre.release.xcconfig"; sourceTree = "<group>"; };
+		81F5F8691F3F2BD92420E8E6 /* Pods-DesafiaMercadoLibreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafiaMercadoLibreTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafiaMercadoLibreTests/Pods-DesafiaMercadoLibreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86BE1F4E9050FED560341605 /* Pods_DesafiaMercadoLibreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafiaMercadoLibreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA28EF9476B004C583CBF29 /* Pods-DesafiaMercadoLibre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafiaMercadoLibre.debug.xcconfig"; path = "Target Support Files/Pods-DesafiaMercadoLibre/Pods-DesafiaMercadoLibre.debug.xcconfig"; sourceTree = "<group>"; };
+		A0866B719F0AA88CC775B6A6 /* Pods-DesafiaMercadoLibreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafiaMercadoLibreTests.release.xcconfig"; path = "Target Support Files/Pods-DesafiaMercadoLibreTests/Pods-DesafiaMercadoLibreTests.release.xcconfig"; sourceTree = "<group>"; };
+		A31915B16FB8D758AD805BF0 /* Pods_DesafiaMercadoLibreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafiaMercadoLibreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8ED267861E7993416F45C70 /* Pods-DesafiaMercadoLibreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafiaMercadoLibreUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafiaMercadoLibreUITests/Pods-DesafiaMercadoLibreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9B64745C9FE32847B7E29B2 /* Pods-DesafiaMercadoLibreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafiaMercadoLibreUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafiaMercadoLibreUITests/Pods-DesafiaMercadoLibreUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23C272B222B93C7500F3E43A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8B2688B508A0D5CBC04C07 /* Pods_DesafiaMercadoLibre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23C272C922B93C7700F3E43A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61758BCCA5DCCB55E457BCB /* Pods_DesafiaMercadoLibreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23C272D422B93C7700F3E43A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B114F527CECEF32EDA36B0C5 /* Pods_DesafiaMercadoLibreUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		236BF9EA22E5350C008C66AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				236BF9EB22E53527008C66AC /* ProductView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		236C213622C1CE850041C7A2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				23A236D122CE8B88008FBA69 /* CodableUtils.swift */,
+				23A236D322CE8B9E008FBA69 /* CodableError.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		236C213722C1CE8D0041C7A2 /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				2391F4FD22DEC46C00BE14CA /* ProductAppInstance.swift */,
+			);
+			path = Instance;
+			sourceTree = "<group>";
+		};
+		236C213A22C1CEBE0041C7A2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				236C214322C1DA950041C7A2 /* ProductRepositoryProtocol.swift */,
+				23A236CE22CE8989008FBA69 /* Query.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		236C213B22C1CED90041C7A2 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		2391F4FF22DECC9F00BE14CA /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				2391F50022DECCA900BE14CA /* Cell */,
+				2391F50322DECD0E00BE14CA /* UIView-extension.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		2391F50022DECCA900BE14CA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2391F50122DECCC000BE14CA /* BaseCellProtocol.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23A236C922CE88E7008FBA69 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				23A236CA22CE8909008FBA69 /* DomainError.swift */,
+				23A236CC22CE892F008FBA69 /* PerformAction.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		23A236D522CE8D80008FBA69 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				236C214122C1D4D00041C7A2 /* AFService.swift */,
+				23A236D622CE8D94008FBA69 /* ProductServiceProtocol.swift */,
+				23A236D822CE8E11008FBA69 /* SearchProductError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		23C272AC22B93C7500F3E43A = {
+			isa = PBXGroup;
+			children = (
+				23C272B722B93C7500F3E43A /* DesafiaMercadoLibre */,
+				23C272CF22B93C7700F3E43A /* DesafiaMercadoLibreTests */,
+				23C272DA22B93C7700F3E43A /* DesafiaMercadoLibreUITests */,
+				23C272B622B93C7500F3E43A /* Products */,
+				EFDCD845035214C6B051AD2F /* Pods */,
+				76CCA235D433A91F4FD4ED15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23C272B622B93C7500F3E43A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23C272B522B93C7500F3E43A /* DesafiaMercadoLibre.app */,
+				23C272CC22B93C7700F3E43A /* DesafiaMercadoLibreTests.xctest */,
+				23C272D722B93C7700F3E43A /* DesafiaMercadoLibreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23C272B722B93C7500F3E43A /* DesafiaMercadoLibre */ = {
+			isa = PBXGroup;
+			children = (
+				23C272EB22B93E0100F3E43A /* Presentation */,
+				23C272EA22B93DC000F3E43A /* Core */,
+				23C272B822B93C7500F3E43A /* AppDelegate.swift */,
+				23C272BA22B93C7500F3E43A /* ViewController.swift */,
+				23C272BC22B93C7500F3E43A /* Main.storyboard */,
+				23C272C222B93C7700F3E43A /* Assets.xcassets */,
+				23C272C422B93C7700F3E43A /* LaunchScreen.storyboard */,
+				23C272C722B93C7700F3E43A /* Info.plist */,
+				23C272BF22B93C7500F3E43A /* DesafiaMercadoLibre.xcdatamodeld */,
+			);
+			path = DesafiaMercadoLibre;
+			sourceTree = "<group>";
+		};
+		23C272CF22B93C7700F3E43A /* DesafiaMercadoLibreTests */ = {
+			isa = PBXGroup;
+			children = (
+				23C272D022B93C7700F3E43A /* DesafiaMercadoLibreTests.swift */,
+				23C272D222B93C7700F3E43A /* Info.plist */,
+			);
+			path = DesafiaMercadoLibreTests;
+			sourceTree = "<group>";
+		};
+		23C272DA22B93C7700F3E43A /* DesafiaMercadoLibreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23C272DB22B93C7700F3E43A /* DesafiaMercadoLibreUITests.swift */,
+				23C272DD22B93C7700F3E43A /* Info.plist */,
+			);
+			path = DesafiaMercadoLibreUITests;
+			sourceTree = "<group>";
+		};
+		23C272EA22B93DC000F3E43A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				23C272EE22B93EA600F3E43A /* action */,
+				23C272ED22B93E8C00F3E43A /* infrastrucure */,
+				23C272EC22B93E8300F3E43A /* domain */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		23C272EB22B93E0100F3E43A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2391F4FF22DECC9F00BE14CA /* Commons */,
+				236C213B22C1CED90041C7A2 /* Error */,
+				23C272F622B9414100F3E43A /* SearchProduct */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		23C272EC22B93E8300F3E43A /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				23A236C922CE88E7008FBA69 /* Utils */,
+				236C213A22C1CEBE0041C7A2 /* Repository */,
+				23F02BEE22C062CD003083CF /* Model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		23C272ED22B93E8C00F3E43A /* infrastrucure */ = {
+			isa = PBXGroup;
+			children = (
+				236C213722C1CE8D0041C7A2 /* Instance */,
+				236C213622C1CE850041C7A2 /* Util */,
+				23F02BEF22C062F0003083CF /* Repository */,
+			);
+			path = infrastrucure;
+			sourceTree = "<group>";
+		};
+		23C272EE22B93EA600F3E43A /* action */ = {
+			isa = PBXGroup;
+			children = (
+				23C272F422B940FF00F3E43A /* SearchProduct.swift */,
+				238EAB20230B5CAA005AEBA6 /* GetProductDetail.swift */,
+			);
+			path = action;
+			sourceTree = "<group>";
+		};
+		23C272F122B9409A00F3E43A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				23C272F222B940BB00F3E43A /* Product.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		23C272F622B9414100F3E43A /* SearchProduct */ = {
+			isa = PBXGroup;
+			children = (
+				236BF9EA22E5350C008C66AC /* Model */,
+				23C272F922B9416800F3E43A /* instance */,
+				23C272F822B9416200F3E43A /* presenter */,
+				23C272F722B9415C00F3E43A /* view */,
+			);
+			path = SearchProduct;
+			sourceTree = "<group>";
+		};
+		23C272F722B9415C00F3E43A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				23C272FA22B9419D00F3E43A /* SearchProductViewController.swift */,
+				2391F50522DECD7900BE14CA /* SearchScreenCollectionViewCell.swift */,
+				2391F50722DED2E400BE14CA /* SearchScreenView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		23C272F822B9416200F3E43A /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				23C272FC22B941BE00F3E43A /* SearchProductPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		23C272F922B9416800F3E43A /* instance */ = {
+			isa = PBXGroup;
+			children = (
+				23C272FE22B941DA00F3E43A /* SearchProductInstance.swift */,
+			);
+			path = instance;
+			sourceTree = "<group>";
+		};
+		23F02BEE22C062CD003083CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23C272F122B9409A00F3E43A /* Product */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23F02BEF22C062F0003083CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				23A236D522CE8D80008FBA69 /* Service */,
+				23F02BF022C062FD003083CF /* Model */,
+				236C214522C1DB000041C7A2 /* ProductRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		23F02BF022C062FD003083CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				236C213422C06BB60041C7A2 /* ProductRepresentation.swift */,
+				236C214722C255BB0041C7A2 /* SearchResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76CCA235D433A91F4FD4ED15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F2A597A1A98355367AE8569 /* Pods_DesafiaMercadoLibre.framework */,
+				86BE1F4E9050FED560341605 /* Pods_DesafiaMercadoLibreTests.framework */,
+				A31915B16FB8D758AD805BF0 /* Pods_DesafiaMercadoLibreUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFDCD845035214C6B051AD2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DA28EF9476B004C583CBF29 /* Pods-DesafiaMercadoLibre.debug.xcconfig */,
+				43F2E9061A8E69A6380CCF69 /* Pods-DesafiaMercadoLibre.release.xcconfig */,
+				81F5F8691F3F2BD92420E8E6 /* Pods-DesafiaMercadoLibreTests.debug.xcconfig */,
+				A0866B719F0AA88CC775B6A6 /* Pods-DesafiaMercadoLibreTests.release.xcconfig */,
+				A8ED267861E7993416F45C70 /* Pods-DesafiaMercadoLibreUITests.debug.xcconfig */,
+				F9B64745C9FE32847B7E29B2 /* Pods-DesafiaMercadoLibreUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23C272B422B93C7500F3E43A /* DesafiaMercadoLibre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23C272E022B93C7700F3E43A /* Build configuration list for PBXNativeTarget "DesafiaMercadoLibre" */;
+			buildPhases = (
+				31923211EFF4899047DE01FD /* [CP] Check Pods Manifest.lock */,
+				23C272B122B93C7500F3E43A /* Sources */,
+				23C272B222B93C7500F3E43A /* Frameworks */,
+				23C272B322B93C7500F3E43A /* Resources */,
+				270005C7C2AE7D8B2E83EF3C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafiaMercadoLibre;
+			productName = DesafiaMercadoLibre;
+			productReference = 23C272B522B93C7500F3E43A /* DesafiaMercadoLibre.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23C272CB22B93C7700F3E43A /* DesafiaMercadoLibreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23C272E322B93C7700F3E43A /* Build configuration list for PBXNativeTarget "DesafiaMercadoLibreTests" */;
+			buildPhases = (
+				4F8628FB72E8490BBFCCC404 /* [CP] Check Pods Manifest.lock */,
+				23C272C822B93C7700F3E43A /* Sources */,
+				23C272C922B93C7700F3E43A /* Frameworks */,
+				23C272CA22B93C7700F3E43A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23C272CE22B93C7700F3E43A /* PBXTargetDependency */,
+			);
+			name = DesafiaMercadoLibreTests;
+			productName = DesafiaMercadoLibreTests;
+			productReference = 23C272CC22B93C7700F3E43A /* DesafiaMercadoLibreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23C272D622B93C7700F3E43A /* DesafiaMercadoLibreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23C272E622B93C7700F3E43A /* Build configuration list for PBXNativeTarget "DesafiaMercadoLibreUITests" */;
+			buildPhases = (
+				3494BC74C52A6DFA8369B7D3 /* [CP] Check Pods Manifest.lock */,
+				23C272D322B93C7700F3E43A /* Sources */,
+				23C272D422B93C7700F3E43A /* Frameworks */,
+				23C272D522B93C7700F3E43A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23C272D922B93C7700F3E43A /* PBXTargetDependency */,
+			);
+			name = DesafiaMercadoLibreUITests;
+			productName = DesafiaMercadoLibreUITests;
+			productReference = 23C272D722B93C7700F3E43A /* DesafiaMercadoLibreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23C272AD22B93C7500F3E43A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "FEDERICO VENTRE";
+				TargetAttributes = {
+					23C272B422B93C7500F3E43A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					23C272CB22B93C7700F3E43A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 23C272B422B93C7500F3E43A;
+					};
+					23C272D622B93C7700F3E43A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 23C272B422B93C7500F3E43A;
+					};
+				};
+			};
+			buildConfigurationList = 23C272B022B93C7500F3E43A /* Build configuration list for PBXProject "DesafiaMercadoLibre" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23C272AC22B93C7500F3E43A;
+			productRefGroup = 23C272B622B93C7500F3E43A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23C272B422B93C7500F3E43A /* DesafiaMercadoLibre */,
+				23C272CB22B93C7700F3E43A /* DesafiaMercadoLibreTests */,
+				23C272D622B93C7700F3E43A /* DesafiaMercadoLibreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23C272B322B93C7500F3E43A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C272C622B93C7700F3E43A /* LaunchScreen.storyboard in Resources */,
+				23C272C322B93C7700F3E43A /* Assets.xcassets in Resources */,
+				23C272BE22B93C7500F3E43A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23C272CA22B93C7700F3E43A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23C272D522B93C7700F3E43A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		270005C7C2AE7D8B2E83EF3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafiaMercadoLibre/Pods-DesafiaMercadoLibre-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafiaMercadoLibre/Pods-DesafiaMercadoLibre-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafiaMercadoLibre/Pods-DesafiaMercadoLibre-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31923211EFF4899047DE01FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafiaMercadoLibre-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3494BC74C52A6DFA8369B7D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafiaMercadoLibreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F8628FB72E8490BBFCCC404 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafiaMercadoLibreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23C272B122B93C7500F3E43A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236C214822C255BB0041C7A2 /* SearchResponse.swift in Sources */,
+				23A236D722CE8D94008FBA69 /* ProductServiceProtocol.swift in Sources */,
+				23C272FB22B9419D00F3E43A /* SearchProductViewController.swift in Sources */,
+				23C272F522B940FF00F3E43A /* SearchProduct.swift in Sources */,
+				2391F50622DECD7900BE14CA /* SearchScreenCollectionViewCell.swift in Sources */,
+				2391F50222DECCC000BE14CA /* BaseCellProtocol.swift in Sources */,
+				23C272FF22B941DA00F3E43A /* SearchProductInstance.swift in Sources */,
+				23C272BB22B93C7500F3E43A /* ViewController.swift in Sources */,
+				23A236D422CE8B9E008FBA69 /* CodableError.swift in Sources */,
+				236C214222C1D4D00041C7A2 /* AFService.swift in Sources */,
+				23A236D922CE8E11008FBA69 /* SearchProductError.swift in Sources */,
+				23C272FD22B941BE00F3E43A /* SearchProductPresenter.swift in Sources */,
+				2391F4FE22DEC46C00BE14CA /* ProductAppInstance.swift in Sources */,
+				236C213522C06BB60041C7A2 /* ProductRepresentation.swift in Sources */,
+				2391F50822DED2E400BE14CA /* SearchScreenView.swift in Sources */,
+				236C214422C1DA950041C7A2 /* ProductRepositoryProtocol.swift in Sources */,
+				23A236D222CE8B88008FBA69 /* CodableUtils.swift in Sources */,
+				23C272F322B940BB00F3E43A /* Product.swift in Sources */,
+				236BF9EC22E53527008C66AC /* ProductView.swift in Sources */,
+				238EAB21230B5CAA005AEBA6 /* GetProductDetail.swift in Sources */,
+				23C272B922B93C7500F3E43A /* AppDelegate.swift in Sources */,
+				23C272C122B93C7500F3E43A /* DesafiaMercadoLibre.xcdatamodeld in Sources */,
+				23A236CF22CE8989008FBA69 /* Query.swift in Sources */,
+				23A236CB22CE8909008FBA69 /* DomainError.swift in Sources */,
+				23A236CD22CE892F008FBA69 /* PerformAction.swift in Sources */,
+				236C214622C1DB000041C7A2 /* ProductRepository.swift in Sources */,
+				2391F50422DECD0E00BE14CA /* UIView-extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23C272C822B93C7700F3E43A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C272D122B93C7700F3E43A /* DesafiaMercadoLibreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23C272D322B93C7700F3E43A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C272DC22B93C7700F3E43A /* DesafiaMercadoLibreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23C272CE22B93C7700F3E43A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23C272B422B93C7500F3E43A /* DesafiaMercadoLibre */;
+			targetProxy = 23C272CD22B93C7700F3E43A /* PBXContainerItemProxy */;
+		};
+		23C272D922B93C7700F3E43A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23C272B422B93C7500F3E43A /* DesafiaMercadoLibre */;
+			targetProxy = 23C272D822B93C7700F3E43A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23C272BC22B93C7500F3E43A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23C272BD22B93C7500F3E43A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23C272C422B93C7700F3E43A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23C272C522B93C7700F3E43A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23C272DE22B93C7700F3E43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23C272DF22B93C7700F3E43A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23C272E122B93C7700F3E43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA28EF9476B004C583CBF29 /* Pods-DesafiaMercadoLibre.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafiaMercadoLibre/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.DesafiaMercadoLibre;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23C272E222B93C7700F3E43A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F2E9061A8E69A6380CCF69 /* Pods-DesafiaMercadoLibre.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafiaMercadoLibre/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.DesafiaMercadoLibre;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23C272E422B93C7700F3E43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81F5F8691F3F2BD92420E8E6 /* Pods-DesafiaMercadoLibreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafiaMercadoLibreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.DesafiaMercadoLibreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafiaMercadoLibre.app/DesafiaMercadoLibre";
+			};
+			name = Debug;
+		};
+		23C272E522B93C7700F3E43A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0866B719F0AA88CC775B6A6 /* Pods-DesafiaMercadoLibreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafiaMercadoLibreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.DesafiaMercadoLibreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafiaMercadoLibre.app/DesafiaMercadoLibre";
+			};
+			name = Release;
+		};
+		23C272E722B93C7700F3E43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8ED267861E7993416F45C70 /* Pods-DesafiaMercadoLibreUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafiaMercadoLibreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.DesafiaMercadoLibreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafiaMercadoLibre;
+			};
+			name = Debug;
+		};
+		23C272E822B93C7700F3E43A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B64745C9FE32847B7E29B2 /* Pods-DesafiaMercadoLibreUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DesafiaMercadoLibreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.DesafiaMercadoLibreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafiaMercadoLibre;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23C272B022B93C7500F3E43A /* Build configuration list for PBXProject "DesafiaMercadoLibre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C272DE22B93C7700F3E43A /* Debug */,
+				23C272DF22B93C7700F3E43A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23C272E022B93C7700F3E43A /* Build configuration list for PBXNativeTarget "DesafiaMercadoLibre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C272E122B93C7700F3E43A /* Debug */,
+				23C272E222B93C7700F3E43A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23C272E322B93C7700F3E43A /* Build configuration list for PBXNativeTarget "DesafiaMercadoLibreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C272E422B93C7700F3E43A /* Debug */,
+				23C272E522B93C7700F3E43A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23C272E622B93C7700F3E43A /* Build configuration list for PBXNativeTarget "DesafiaMercadoLibreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C272E722B93C7700F3E43A /* Debug */,
+				23C272E822B93C7700F3E43A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23C272BF22B93C7500F3E43A /* DesafiaMercadoLibre.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23C272C022B93C7500F3E43A /* DesafiaMercadoLibre.xcdatamodel */,
+			);
+			currentVersion = 23C272C022B93C7500F3E43A /* DesafiaMercadoLibre.xcdatamodel */;
+			path = DesafiaMercadoLibre.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 23C272AD22B93C7500F3E43A /* Project object */;
+}

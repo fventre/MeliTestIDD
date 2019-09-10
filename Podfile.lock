@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Alamofire-Synchronous (4.0.0):
+    - Alamofire (~> 4.0)
+  - RxSwift (5.0.0)
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
+
+DEPENDENCIES:
+  - Alamofire-Synchronous (~> 4.0)
+  - RxSwift (~> 5)
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Alamofire-Synchronous
+    - RxSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Alamofire-Synchronous: eedf1e6e961c3795a63c74990b3f7d9fbfac7e50
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
+
+PODFILE CHECKSUM: b49698fb1177164d0e49a0a3dd8ced8db1eb90b3
+
+COCOAPODS: 1.7.1
